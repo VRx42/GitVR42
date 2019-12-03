@@ -19,7 +19,6 @@
 
 # define BUFFER_SIZE 32
 int		get_next_line(int fd, char **line);
-char	*ft_strncpy(char *dst, const char *src, size_t len);
 char	*ft_strchr(const char *s, int c);
 size_t	ft_strlen(const char *s);
 char	*ft_strdup(char *s1);
