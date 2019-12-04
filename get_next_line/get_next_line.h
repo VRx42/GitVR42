@@ -6,7 +6,7 @@
 /*   By: vronchin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 14:57:42 by vronchin          #+#    #+#             */
-/*   Updated: 2019/11/28 17:46:40 by vronchin         ###   ########.fr       */
+/*   Updated: 2019/12/04 12:50:15 by vronchin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,5 @@ char	*ft_strdup(char *s1);
 char	*ft_substr(char *s, unsigned int start, size_t len);
 char	*ft_strncpy(char *dst, const char *src, size_t len);
 char	*ft_strjoin(char *s1, char *s2);
+char	*ft_strcpy(char *dst, const char *src);
 #endif

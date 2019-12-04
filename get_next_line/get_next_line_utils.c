@@ -6,7 +6,7 @@
 /*   By: vronchin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/27 14:11:26 by vronchin          #+#    #+#             */
-/*   Updated: 2019/12/04 12:04:47 by vronchin         ###   ########.fr       */
+/*   Updated: 2019/12/04 14:39:35 by vronchin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -157,8 +157,23 @@ char	*ft_strjoin(char *s1, char *s2)
 			len1++;
 		}
 		str[len1] = '\0';
-		free(s1);
+		
 		return (str);
 	}
 	return (NULL);
+}
+
+
+char	*ft_strcpy(char *dst, const char *src)
+{
+	int i;
+
+	i = 0;
+	while (src[i] != '\0')
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	dst[i] = '\0';
+	return (dst);
 }

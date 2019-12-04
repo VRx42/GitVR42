@@ -6,7 +6,7 @@
 /*   By: vronchin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:18:41 by vronchin          #+#    #+#             */
-/*   Updated: 2019/12/04 12:04:24 by vronchin         ###   ########.fr       */
+/*   Updated: 2019/12/04 16:59:03 by vronchin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,27 +19,21 @@ int	make_line(char **line,  char **str, char *ptr_str)
 	size_t		i;
 	char		*tmp;
 
-	//printf("2")
 	i = 0;
-	while (ptr_str[i] != '\n' && ptr_str[i])
+	while (ptr_str[i] != '\n' && ptr_str[i] != '\0')
 		i++;
-	//printf("= %c =", ptr_str[i]);
 	if (ptr_str[i] == '\n')
 	{
 		(*line) = ft_substr(*str, 0, i);
-		//puts((*line));
 		tmp = ft_strdup(&(*str)[i + 1]);
-		puts(tmp);
 		free(*str);
 		(*str) = tmp;
-		//puts((*str));
+		return (1);
 	}
-	//else
-	//{
-	//	(*line) = ft_strdup(*str);
-	//	puts((*line));
-	//}	
-	return (1);
+	else//si on a pas trouve de /n alors go back to le fucking \n ou \0 alors on continue dans la boucle
+	{
+		return (0);
+	}
 }
 
 int	get_next_line(int fd, char **line)
@@ -56,46 +50,44 @@ int	get_next_line(int fd, char **line)
 		if (!(str = (char*)malloc(sizeof(char) * (BUFFER_SIZE + 1))))
 			return (-1);
 	}
-	while ((ret = read(fd, buffer, BUFFER_SIZE)) > 0)//tant que read > 0 (i.e qu' on a lu quelque chose)
+	while ((ret = read(fd, buffer, BUFFER_SIZE)) > 0)
 	{
 		buffer[ret] = '\0';
 		if (buffer[0] == '\0')
 			return (1);
 		tmp = ft_strjoin(str, buffer);
+		free(str);
 		str = tmp;
-		//printf("*");
-		//puts(str);
-		//printf("*");
-		if (make_line(line, &str, str) == 1)//deux cqs; on a un \n ou pas
+		if (make_line(line, &str, str) == 1)//si on trouve dans str un \n ou un \0 on a fini la ligne
 			return (1);
 	}
 	return (0);
 }
-/*
+
 int			main(int ac, char **av)
 {
 	int		fd;
 	char	*line;
 	int		i;
-	int		ret = 0;
+	//int		ret = 0;
 	
 	i = 1;
 	ac = ac + 0;
 	fd = open(av[1], O_RDONLY);
 	//printf("fd = %d\n", fd);
-	while ((get_next_line(fd, &line) == 1))
+	while (i < 27)
 	{
-		ret = get_next_line(fd, &line);
-		//printf("[%d] [%d] |%s|\n", i, ret,  line);
-		//printf("%d - \n", i);
+		get_next_line(fd, &line);
+		printf("[%d] |%s|\n", i, line);
 		i++;
-		free(line);
 	}
+	get_next_line(fd, &line);
+	printf("[%d] |%s|\n", i,  line);
 	close(fd);
 	return (0);
-}*/
+}
 
-
+/*
 int	main(int argc, char const *argv[])
 {
 	int fd;
@@ -112,13 +104,5 @@ int	main(int argc, char const *argv[])
 		printf("[%d] %s\n", i++, line);
 		free(line);
 	}
-	/*fd_2 = open(argv[2], O_RDONLY);
-	close(fd);
-	fd = fd_2;
-	while ((status = get_next_line(fd, &line)) == 1)
-	{
-		printf("[%d] %s\n", i++, line);
-		free(line);
-	}*/
 	return (argc);
-}
+}*/

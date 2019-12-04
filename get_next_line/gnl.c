@@ -29,7 +29,7 @@ char	*readline(char *str, int fd)
 int		get_next_line(int const fd, char **line)
 {
 	static char	*str;
-	int			i;
+	size_t			i;
 
 	if (checkerror(fd, &str, line) == -1)
 		return (-1);
@@ -45,7 +45,7 @@ int		get_next_line(int const fd, char **line)
 			(*line) = ft_strdup("");
 		else
 		{
-			(*line) = ft_strsub(str, 0, i);
+			(*line) = ft_substr(str, 0, i);
 			str = &str[i + 1];
 		}
 		return (1);
@@ -66,7 +66,7 @@ int			main(int ac, char **av)
 	ac = ac + 0;
 	fd = open(av[1], O_RDONLY);
 	//printf("fd = %d\n", fd);
-	while (get_next_line(fd, &line) && i < 10)
+	while (get_next_line(fd, &line))
 	{
 		ret = get_next_line(fd, &line);
 		printf("[%d] [%d] |%s|\n", i++, ret,  line);
