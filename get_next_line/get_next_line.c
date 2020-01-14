@@ -6,7 +6,7 @@
 /*   By: vronchin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 15:18:41 by vronchin          #+#    #+#             */
-/*   Updated: 2019/12/04 16:59:03 by vronchin         ###   ########.fr       */
+/*   Updated: 2020/01/14 17:57:41 by vronchin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ int	make_line(char **line,  char **str, char *ptr_str)
 		tmp = ft_strdup(&(*str)[i + 1]);
 		free(*str);
 		(*str) = tmp;
+		if (ptr_str[0] == '\0')
+			ft_strdel(&str[
 		return (1);
 	}
 	else//si on a pas trouve de /n alors go back to le fucking \n ou \0 alors on continue dans la boucle
@@ -59,22 +61,15 @@ int	get_next_line(int fd, char **line)
 		buffer[ret] = '\0';
 		if (buffer[0] == '\0')
 			return (1);
-		//printf("*%c*", buffer[0]);
-		//printf("*%c*", buffer[1]);
-		//printf("*%c*", buffer[2]);
-		tmp = ft_strjoin(str, buffer);
+		tmp = ft_strjoin(str, buffer);//le tmp est malloc
 		free(str);
 		str = tmp;
 		if (make_line(line, &str, str) == 1)//si on trouve dans str un \n ou un \0 on a fini la ligne
 		{
-			//printf("/%c/", *line[0]);
-			//printf("/%c/", *line[1]);
-			//printf("/%c/", *line[2]);
-			//printf("/%c/", *line[3]);
 			return (1);
 		}
 	}
-	free(line);
+	//free(line);
 	return (0);
 }
 
@@ -89,14 +84,15 @@ int			main(int ac, char **av)
 	ac = ac + 0;
 	fd = open(av[1], O_RDONLY);
 	//printf("fd = %d\n", fd);
-	while (i < 27)
+	while (get_next_line(fd, &line) == 1)
 	{
-		get_next_line(fd, &line);
+		//get_next_line(fd, &line);
 		printf("[%d] |%s|\n", i, line);
+		free(line);
 		i++;
 	}
-	get_next_line(fd, &line);
-	printf("[%d] |%s|\n", i,  line);
+	//get_next_line(fd, &line);
+	//printf("[%d] |%s|\n", i,  line);
 	close(fd);
 	return (0);
 }
