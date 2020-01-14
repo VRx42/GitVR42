@@ -24,7 +24,11 @@ int	make_line(char **line,  char **str, char *ptr_str)
 		i++;
 	if (ptr_str[i] == '\n')
 	{
-		(*line) = ft_substr(*str, 0, i);
+		(*line) = ft_substr(*str, 0, i);//ici on malloc *line, à démalloquer
+		//printf("/%c/", *str[0]);
+		//printf("/%c/", *str[1]);
+		//printf("/%c/", *str[2]);
+		//printf("/%c/", *line[3]);
 		tmp = ft_strdup(&(*str)[i + 1]);
 		free(*str);
 		(*str) = tmp;
@@ -55,12 +59,22 @@ int	get_next_line(int fd, char **line)
 		buffer[ret] = '\0';
 		if (buffer[0] == '\0')
 			return (1);
+		//printf("*%c*", buffer[0]);
+		//printf("*%c*", buffer[1]);
+		//printf("*%c*", buffer[2]);
 		tmp = ft_strjoin(str, buffer);
 		free(str);
 		str = tmp;
 		if (make_line(line, &str, str) == 1)//si on trouve dans str un \n ou un \0 on a fini la ligne
+		{
+			//printf("/%c/", *line[0]);
+			//printf("/%c/", *line[1]);
+			//printf("/%c/", *line[2]);
+			//printf("/%c/", *line[3]);
 			return (1);
+		}
 	}
+	free(line);
 	return (0);
 }
 
