@@ -1,0 +1,9 @@
+conda list
+
+
+
+
+conda list
+conda search numpy
+
+pip freeze > requirements.txt
