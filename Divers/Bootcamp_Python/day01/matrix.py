@@ -1,6 +1,5 @@
 
 
-
 class Matrix():       
     def __init__(self, data):
         if (isinstance(data[0], list)):
