@@ -2,9 +2,6 @@
 
 
 class Matrix():       
-#         lines_matrix = sum(1 for line in data[line]) 
-#         self.shape = (lines_matrix, len(data[0]))
-
     def __init__(self, data):
         if (isinstance(data[0], list)):
             for line in data:
