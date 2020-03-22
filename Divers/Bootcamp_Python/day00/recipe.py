@@ -7,7 +7,7 @@ cookbook = {'sandwhich' :   {'ingredients' : ['ham', 'bread', 'cheese', 'tomatoe
                             'meal' : 'dessert',
                             'prep_time' : 10},
             'salad':        { 'ingredients' : ['avocado', 'arugula', 'tomatoes', 'arugula'],
-                            'meal' : 'lunch',
+                            'meal' : 'starter',
                             'prep_time' : 15}
             }
 
