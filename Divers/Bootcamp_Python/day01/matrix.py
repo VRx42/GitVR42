@@ -133,8 +133,7 @@ class Matrix():
         return Matrix.__mult__(self, other)
 
 
-
-# m1 = Matrix((4, 2))
+"""TESTS DIVERS
 #(5:2)
 m1 = Matrix([[8.0, 4.0],
              [2.0, 1.0],
@@ -151,15 +150,17 @@ m2 = Matrix([[1.0, 11.0],
 m3 = Matrix([[4.0, 3.0, 4.0, 5.0],
              [1.0, 5.0, 1.0, 6.2]])
 
+m4 = Matrix((4, 2))
 
 
 
-# print(m2.data)
-# print(m2.shape)
-# print(m2.column)
+print(m2.data)
+print(m2.shape)
+print(m2.column)
 
-# mult= Matrix.__mult__(m2, m3)
-# print(m3.column)
-# print(mult.data)
+mult= Matrix.__mult__(m2, m3)
+print(m3.column)
+print(mult.data)
 
 print(m3.__str__())
+"""
