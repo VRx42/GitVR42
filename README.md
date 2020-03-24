@@ -12,6 +12,7 @@
 - [What is 42?](#what-is-42)
 - [Project list](#project-list)
 - [The Norm](#the-norm)
+- [Side projects](#side-projects)
 
 ## What is 42?
 
@@ -24,7 +25,7 @@ A Piscine (i.e *'swimming pool'* in French) is a 4-week intensive and immersive 
 
 ## About myself
 * 2014: graduation of international high school. A+ equivalent.
-* 2014-2017: preparation to the top French business schools
+* 2014-2017: intensive preparation for the top French business schools competitive exam
 * 2018: student at ESSEC Business School. (top 5% - pool of 8.5k+ students)
 * 2019: 42-School Piscine (top 10%)
 
@@ -83,3 +84,9 @@ The Norm is 42 style guideline and **apply for all programs written in C**. A si
 * 25 lines per function maximum (without external brackets) and 84 characters per line maximum
 * no more than 5 functions in a .c file and no more than 5 variables per function, no comments within a function's body
 * `for` loops are forbidden
+
+### Side projects
+| Project | Description | Language/tools | Started | Completed |
+|:---:|:---|:---:|:---:|:---:|
+| Tinderbot | a bot that automatically swipes and disguise itself as a user | Python (Selenium + Chromedriver)|02/2020|02/2020|
+| Bootcamp Python | introduction to vectors, matrix, generators | Python |02/2020|03/2020|
