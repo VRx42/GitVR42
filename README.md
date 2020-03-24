@@ -10,7 +10,6 @@
 ## Table of Contents
 
 - [What is 42?](#what-is-42)
-- [New curriculum](#new-curriculum)
 - [Project list](#project-list)
 - [The Norm](#the-norm)
 
@@ -20,26 +19,22 @@
 
 42's educational model is qualified as innovative and is unlike any other program: **no teachers, courses or classes, no tuition, no fees and no grades required to enter the school**. The only admission requirements are to be 18+ years old and then to complete the entrance examination: *'la Piscine'*.
 
-A Piscine (that means *'swimming pool'* in French) is a 4-week intensive and immersive coding bootcamp, 7 days a week. No previous programming experience required. 900 applicants learn C programming and bash scripting through daily exercises. Selected candidates (appr. 250 for Paris and until 2018 since the process changed in 2019) can register to be full-time students at 42, a tuition-free engineering school.
+A Piscine (i.e *'swimming pool'* in French) is a 4-week intensive and immersive coding bootcamp, 7 days a week, 15 hours a day. No previous programming experience required. 900 applicants learn C programming and bash scripting through daily exercises. Selected candidates (approx. 200) can register to be full-time students at 42, a tuition-free engineering school.
 <br/>
 
-## New curriculum
+## About myself
+* 2014: graduation of international high school. A+ equivalent.
+* 2014-2017: preparation to the top French business schools
+* 2018: student at ESSEC Business School. (top 5% - pool of 8.5k+ students)
+* 2019: 42-School Piscine (top 10%)
 
-A new curriculum was launched in fall 2019. You can find some of my former projects [here](former-cursus). The new curriculum includes both former projects and new projects related to networking and system administration.
-
-A few information:
-* took and passed Piscine in 2019
-* study at Paris Campus
-* simultanuesly studying at ESSEC Business School
 
 <br/>
 
 ## Project list
 
-Redoing [Piscine C](https://github.com/matboivin/piscine-C-reiteration) one year after for fun and improvement.
-
 <h3 align="center">
-  Holy Graph (wip)
+  Holy Graph
 </h3>
 
 <p align="center">
@@ -53,8 +48,8 @@ Redoing [Piscine C](https://github.com/matboivin/piscine-C-reiteration) one year
 
 | Project | Description | Solo/Team | Language | Grade | Started | Completed |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|
-| [libft](new-cursus/libft-2019) | Code your own C library | Solo | C | 115/100 | 2019/12/04 | 2019/12/12 |
-| [global libft](https://github.com/matboivin/libft) | This repository contains a lib that is a mix between the former cursus and the new cursus libft and which I keep updated | Solo | C |  | 2018 | constant updating |
+| [libft](new-cursus/libft-2019) | Code your own C library | Solo | C | 115/100 | 14/11/2019 | 12/12/2019 |
+
 <br/>
 
 <h3 align="center">
@@ -63,9 +58,20 @@ Redoing [Piscine C](https://github.com/matboivin/piscine-C-reiteration) one year
 
 | Project | Description | Solo/Team | Language | Grade | Started | Completed |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|
-|[netwhat](https://github.com/matboivin/netwhat-ip-calculator)| An introduction to network problematics | Solo | Python | 100/100 |  | 2020/01/18 |
-|[get_next_line](https://github.com/matboivin/get-next-line) | A function that reads a file line by line | Solo | C | 102/100 | 2019/12/09 | 2020/02/04 |
-|[ft_printf](https://github.com/matboivin/ft_printf)| Implement your own printf | Solo | C |  | 2020/02/25 | :dart: |
+|[netwhat]| An introduction to network problematics | Solo | Python | 100/100 |  | 20/01/2020 |
+|[get_next_line](https://github.com/VRx42/GitVR42/tree/master/2.get_next_linee) | A function that reads a file line by line | Solo | C | 115/100 | 2019/12/09 | 2020/02/04 |
+|[ft_printf](https://github.com/VRx42/GitVR42/tree/master/3.ft_printf)| Implement your own printf | Solo | C | 100/100 | 20/01/2020 | 15/02/2020 |
+
+<h3 align="center">
+  Rank 02
+</h3>
+
+| Project | Description | Solo/Team | Language | Grade | Started | Completed |
+|:---:|:---|:---:|:---:|:---:|:---:|:---:|
+|[ft_server]| Implement a web server with docker | Solo | C | x | 15/03/2020 | :darts: |
+|[cube3d]| Create a videogame-like interface and move around with a character | Solo | C | x | 15/03/2020 | :darts: |
+<!-- |[ft_printf](https://github.com/VRx42/GitVR42/tree/master/3.ft_printf)| Implement your own printf | Solo | C | 100/100 | 20/01/2020 | 15/02/2020 | -->
+
 
 ### The Norm
 
@@ -77,5 +83,3 @@ The Norm is 42 style guideline and **apply for all programs written in C**. A si
 * 25 lines per function maximum (without external brackets) and 84 characters per line maximum
 * no more than 5 functions in a .c file and no more than 5 variables per function, no comments within a function's body
 * `for` loops are forbidden
-
-and so forth...
