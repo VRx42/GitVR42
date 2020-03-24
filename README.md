@@ -88,5 +88,5 @@ The Norm is 42 style guideline and **apply for all programs written in C**. A si
 ### Side projects
 | Project | Description | Language/tools | Started | Completed |
 |:---:|:---|:---:|:---:|:---:|
-| Tinderbot | a bot that automatically swipes and disguise itself as a user | Python (Selenium + Chromedriver)|02/2020|02/2020|
+| Tinderbot | a bot that automatically swipes and disguises itself as a user | Python (Selenium + Chromedriver)|02/2020|02/2020|
 | Bootcamp Python | introduction to vectors, matrix, generators | Python |02/2020|03/2020|
