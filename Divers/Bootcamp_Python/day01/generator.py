@@ -12,27 +12,26 @@ def generator(text, sep=" ", option=None):
         random.shuffle(split_text)
         for word in split_text:
             yield (word)
-    # elif (option == "ordered"):
-    #     ordered = 
+    elif (option == "ordered"):
+        split_text = text.split(sep)
+        (split_text).sort()
+        for word in split_text:
+            yield (word)
 
-# def order(lst)
-#     for word in list
-#         for i in word
-#             if 
-        
 
+"""" le .sort et le .shuffle effectuent l'operation sans renvoyer d'objet (listes)
+"""
+""" TEST 
 text = "Le Lorem Ipsum est simplement du faux texte."
+
 i = 0
-for word in generator(text, sep= " ", option="shuffle"):
+for word in generator(text, sep= " ",):
     print(word)
     i += 1
-
-
-# lst = ['le', 'Lorem', 'Nopsum', 'Emma']
-
-
-# for word in generator(text, sep=" ", option="shuffle"):
-#     print(word)
-
-# for word in generator(text, sep=" ", option="ordered"):
-#     print(word)
+print("\n")
+for word in generator(text, sep=" ", option="shuffle"):
+    print(word)
+print("\n")
+for word in generator(text, sep=" ", option="ordered"):
+    print(word)
+"""
