@@ -60,7 +60,7 @@ A Piscine (i.e *'swimming pool'* in French) is a 4-week intensive and immersive 
 | Project | Description | Solo/Team | Language | Grade | Started | Completed |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|
 | netwhat | An introduction to network problematics | Solo | Python | 100/100 |  | 20/01/2020 |
-|[get_next_line](https://github.com/VRx42/GitVR42/tree/master/2.get_next_linee) | A function that reads a file line by line | Solo | C | 115/100 | 2019/12/09 | 2020/02/04 |
+|[get_next_line](https://github.com/VRx42/GitVR42/tree/master/2.get_next_linee) | A function that reads a file line by line | Solo | C | 115/100 | 15/12/2019 | 20/01/04 |
 |[ft_printf](https://github.com/VRx42/GitVR42/tree/master/3.ft_printf)| Implement your own printf | Solo | C | 100/100 | 20/01/2020 | 15/02/2020 |
 
 <h3 align="center">
