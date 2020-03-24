@@ -68,8 +68,8 @@ A Piscine (i.e *'swimming pool'* in French) is a 4-week intensive and immersive 
 
 | Project | Description | Solo/Team | Language | Grade | Started | Completed |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|
-| ft_server | Implement a web server with docker | Solo | C | x | 15/03/2020 | :darts: |
-| cube3d | Create a videogame-like interface and move around with a character | Solo | C | x | 15/03/2020 | :darts: |
+| ft_server | Implement a web server with docker | Solo | C | x | 15/03/2020 | :dart: |
+| cube3d | Create a videogame-like interface and move around with a character | Solo | C | x | 15/03/2020 | :dart: |
 <!-- |[ft_printf](https://github.com/VRx42/GitVR42/tree/master/3.ft_printf)| Implement your own printf | Solo | C | 100/100 | 20/01/2020 | 15/02/2020 | -->
 
 
