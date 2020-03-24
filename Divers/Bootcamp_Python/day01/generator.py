@@ -1,7 +1,5 @@
 
-
 import random
-
 
 def generator(text, sep=" ", option=None):
     if (isinstance(text, str) == False):
@@ -10,18 +8,17 @@ def generator(text, sep=" ", option=None):
         for word in text.split(sep):
             yield (word)
     elif (option == "shuffle"):
-        reversed = random.shuffle(text.split(sep))
-        print(reversed)
-        for word in random.shuffle(text.split(sep)):
+        split_text = text.split(sep)
+        random.shuffle(split_text)
+        for word in split_text:
             yield (word)
     # elif (option == "ordered"):
-    #     for
+    #     ordered = 
 
-
-
-def shuffle_list(lst):
-
-    for i in range(len(lst))
+# def order(lst)
+#     for word in list
+#         for i in word
+#             if 
         
 
 text = "Le Lorem Ipsum est simplement du faux texte."
@@ -31,7 +28,7 @@ for word in generator(text, sep= " ", option="shuffle"):
     i += 1
 
 
-lst = ['le', 'Lorem', 'Nopsum', 'Emma']
+# lst = ['le', 'Lorem', 'Nopsum', 'Emma']
 
 
 # for word in generator(text, sep=" ", option="shuffle"):
