@@ -1,8 +1,8 @@
 from selenium import webdriver
 from time import sleep
 
-password = 'KaporalSmith9'
-username = 'vic.ronchin@yahoo.fr'
+password = 'xxx'
+username = 'xxx'
 
 class TinderBot():
     def __init__(self):
