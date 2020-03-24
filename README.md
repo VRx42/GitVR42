@@ -48,7 +48,7 @@ A Piscine (i.e *'swimming pool'* in French) is a 4-week intensive and immersive 
 
 | Project | Description | Solo/Team | Language | Grade | Started | Completed |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|
-| [libft](new-cursus/libft-2019) | Code your own C library | Solo | C | 115/100 | 14/11/2019 | 12/12/2019 |
+| [libft](new-cursus/libft-2019) | Code your own C library (basic functions) | Solo | C | 115/100 | 14/11/2019 | 12/12/2019 |
 
 <br/>
 
