@@ -6,11 +6,11 @@
 /*   By: vronchin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 18:01:40 by vronchin          #+#    #+#             */
-/*   Updated: 2020/02/16 14:48:06 by vronchin         ###   ########.fr       */
+/*   Updated: 2020/02/16 14:47:43 by vronchin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 size_t	ft_strlen(const char *s)
 {

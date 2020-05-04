@@ -6,12 +6,12 @@
 /*   By: vronchin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/15 16:04:13 by vronchin          #+#    #+#             */
-/*   Updated: 2020/02/04 15:09:06 by vronchin         ###   ########.fr       */
+/*   Updated: 2020/02/14 14:03:16 by vronchin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
 
 # include <fcntl.h>
 # include <unistd.h>

@@ -6,11 +6,11 @@
 /*   By: vronchin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 18:01:23 by vronchin          #+#    #+#             */
-/*   Updated: 2020/02/04 15:09:48 by vronchin         ###   ########.fr       */
+/*   Updated: 2020/02/16 10:23:41 by vronchin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 void	ft_freee(char **s)
 {
