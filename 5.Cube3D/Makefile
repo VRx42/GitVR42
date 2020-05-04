@@ -13,9 +13,11 @@
 
 PHONY: libft minilibx
 
-SRCS = srcs/core/helloworld.c \
+SRCS = srcs/core/main.c \
+	srcs/core/parser.c \
+	srcs/core/parser_tex.c \
 
-NAME = Cub3D
+NAME = exec
 GCC_FLAG = -Wall -Werror -Wextra -g
 CC = gcc $(GCC_FLAG)
 
@@ -35,20 +37,19 @@ $(%.o): $(%.c)
 
 $(NAME): $(OBJS)
 	@echo "===COMPILATION==="
-	@$(CC) -o $@ $^ -I srcs/core/ -L srcs/minilibx/ -lmlx -lXext -lX11
+	@$(CC) -o $(NAME) $^ -I srcs/core/ -L srcs/minilibx/ -lmlx -lXext -lX11
 	@echo "DONE :)"
-#gcc -I ../minilibx helloworld.c -L ../minilibx -lmlx -lXext -lX11
-
 
 clean:
 	rm -f $(OBJS)
-	make -C srcs/libft/ clean
-	make -C srcs/minilibx/ clean
+	rm -f $(NAME)
+#	make -C srcs/libft/ clean
+#	make -C srcs/minilibx/ clean
 
 fclean: clean
 	rm -f $(NAME)
 	make -C srcs/libft/ fclean
 	make -C srcs/minilibx/ clean
 
-re: fclean all
-
+re: clean all
+#make re pour dégager seulement les .o des sources CORE sans toucher aux libft et minilibx qu'on en va pas toucher

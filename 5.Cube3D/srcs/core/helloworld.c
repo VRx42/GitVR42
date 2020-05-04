@@ -25,11 +25,14 @@ typedef struct    data_s
 int main(void)
 {
     data_t        data;
+    void          *img1_ptr;
 
     if ((data.mlx_ptr = mlx_init()) == NULL)
         return (EXIT_FAILURE);
     if ((data.mlx_win = mlx_new_window(data.mlx_ptr, 640, 480, "Hello world")) == NULL)
         return (EXIT_FAILURE);
+    img1_ptr = mlx_new_image(data.mlx_ptr, 640, 480);
+    
     mlx_loop(data.mlx_ptr);
     return (EXIT_SUCCESS);
 }
