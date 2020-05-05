@@ -11,7 +11,6 @@
 
 - [What is 42?](#what-is-42)
 - [Project list](#project-list)
-- [The Norm](#the-norm)
 - [Side projects](#side-projects)
 
 ## What is 42?
@@ -24,10 +23,10 @@ A Piscine (i.e *'swimming pool'* in French) is a 4-week intensive and immersive 
 <br/>
 
 ## About myself
-* 2014: graduation of international high school. A+ equivalent.
+* 2014: graduation of international high school. A+ equivalent
 * 2014-2017: intensive preparation for the top French business schools competitive exam
-* 2018: student at ESSEC Business School. (top 5% - pool of 8.5k+ students)
-* 2019: 42-School Piscine (top 10%)
+* 2018: student at ESSEC Business School
+* 2019: 42-School Piscine
 
 
 <br/>
@@ -69,21 +68,16 @@ A Piscine (i.e *'swimming pool'* in French) is a 4-week intensive and immersive 
 
 | Project | Description | Solo/Team | Language | Grade | Started | Completed |
 |:---:|:---|:---:|:---:|:---:|:---:|:---:|
-| ft_server | Implement a web server with docker | Solo | C | x | 15/03/2020 | :dart: |
-| cube3d | Create a videogame-like interface and move around with a character | Solo | C | x | 15/03/2020 | :dart: |
-<!-- |[ft_printf](https://github.com/VRx42/GitVR42/tree/master/3.ft_printf)| Implement your own printf | Solo | C | 100/100 | 20/01/2020 | 15/02/2020 | -->
+| ft_server | Implement a web server with docker, Nginx | Solo | C | 28/04/2020 | 15/03/2020 | Completed |
+| cube3d | Create a videogame-like interface and move around with a character | Solo | C | X | 16/04/2020 | Completed |
 
+<h3 align="center">
+  Rank 03
+</h3>
 
-### The Norm
-
-(If you are wondering why we don't use many built-in functions and `for` loops)
-
-The Norm is 42 style guideline and **apply for all programs written in C**. A single Norm Error leads to the grade of 0/100.
-
-* forbidden functions: almost all the Standard C Library functions except `read`, `open`, `write`, `malloc` and `free` for some projects
-* 25 lines per function maximum (without external brackets) and 84 characters per line maximum
-* no more than 5 functions in a .c file and no more than 5 variables per function, no comments within a function's body
-* `for` loops are forbidden
+| Project | Description | Solo/Team | Language | Grade | Started | Completed |
+|:---:|:---|:---:|:---:|:---:|:---:|:---:|
+| libasm | Recode functions in Assembly  | Solo | Assembly | 28/04/2020 | 05/05/2020 | :darts: |
 
 ### Side projects
 | Project | Description | Language/tools | Started | Completed |
