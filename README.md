@@ -82,5 +82,5 @@ A Piscine (i.e *'swimming pool'* in French) is a 4-week intensive and immersive 
 ### Side projects
 | Project | Description | Language/tools | Started | Completed |
 |:---:|:---|:---:|:---:|:---:|
-| Tinderbot | a bot that automatically swipes and disguises itself as a user | Python (Selenium + Chromedriver)|02/2020|02/2020|
+| Tinderbot | a bot that automatically swipes and disguises itself as a user - well not quite disguise yet | Python (Selenium + Chromedriver)|02/2020|02/2020|
 | Bootcamp Python | introduction to vectors, matrix, generators | Python |02/2020|03/2020|
